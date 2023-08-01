@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./static/css/main.css">
+    <script src="./script.js" defer></script>
+    <script src="./script2.js" defer></script>
+</head>
+<body>
+    <video id="weatherVideo" autoplay muted loop>
+        <source src="./static/images/earth.mp4" type="video/mp4">
+    </video>
+    <section class="main-body">
+        <div class="search-forms">
+            <form action="">
+                <input type="text" class="inputField cityField" name="city" id="city" placeholder="City">
+                <input type="text" class="inputField" name="state" id="state" placeholder="State">
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+        <div class="right-bar">
+            
+            <div class="right-sub">
+                
+                <div class="right-sub-top">
+                    <h1 id="currentTemp"></h1>
+                    <p id="sunUp-sunDown"></p>
+                </div>
+                <hr class="hzRow">
+                
+                <div class = "right-sub-btm">
+                    
+                    <div class="right-sub-btm-grid">
+                        <div id="day1"></div>
+                        <!-- <hr class="hrR"> -->
+                        <div id="day2"></div>
+                        <!-- <hr class="hrR"> -->
+                        <div id="day3"></div>
+                        <!-- <hr class="hrR"> -->
+                        <div id="day4"></div>
+                        <!-- <hr class="hrR"> -->
+                        <div id="day5"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main-result" id="main-result">
+            <img src="" alt="" id="icon">
+            <h1 id="weatherDescMain"></h1>
+            <p id="highLowID"></p>
+        </div>
+        <div class="sub-info sub-grid">
+            <div class="sub-items feels-like">
+                <p class="sub-sub-heading">Feels like:</p>
+                <h1 id="feelsLikeID" class="subHeaders"></h1>
+            </div>
+            <div class="sub-items humidity">
+                <p class="sub-sub-heading">Humidity:</p>
+                <h1 id="humidity" class="subHeaders"></h1>
+            </div>
+            <div class="sub-items wind">
+                <p class="sub-sub-heading">Wind:</p>
+                <h1 id="windD"></h1>
+                <h1 id="windS" class="subHeaderWind"></h1>
+            </div>
+            <div class="sub-items">
+                <p class="sub-sub-heading">Coming Next:</p>
+                
+                <h1 id="nextTemp"></h1>
+                <h4 id="nextDesc"></h4>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
